@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leon的AI收藏夹</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        .navbar {
+            background-color: #1e90ff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-color: #87cefa;
+            color: white;
+            padding: 5rem 1rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 1rem 0 0;
+        }
+        .features {
+            padding: 2rem 1rem;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .features h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .feature-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            width: 250px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 1rem;
+        }
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        .card p {
+            font-size: 1rem;
+            color: #666;
+        }
+        .developer-info {
+            padding: 2rem 1rem;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .developer-info h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .developer-info .feature-cards {
+            display: flex;
+            justify-content: center;
+        }
+        .developer-info .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .developer-info .card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .developer-info .card ul li {
+            margin-bottom: 0.5rem;
+        }
+        .developer-info .card a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        .version-info {
+            padding: 1rem;
+            background-color: #f8f9fa;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+        }
+        .cta-download {
+            padding: 2rem 1rem;
+            background-color: #1e90ff;
+            text-align: center;
+            color: white;
+        }
+        .cta-download p {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .cta-download .download-button {
+            background-color: #fff;
+            color: #1e90ff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        footer {
+            padding: 1rem;
+            background-color: #f8f9fa;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">首页</a>
+        <a href="#features">功能</a>
+        <a href="#contact">联系我们</a>
+    </div>
+    <div class="hero">
+        <h1>Leon的AI收藏夹</h1>
+        <p>用AI来梳理并收藏宝贵知识</p>
+    </div>
+    <div class="features" id="features">
+        <h2>产品特性</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <img src="path/to/icon1.png" alt="Icon 1">
+                <h3>基于中文大模型优化的中文对话体验</h3>
+                <p>提供更自然、更流畅的中文对话体验。</p>
+            </div>
+            <div class="card">
+                <img src="path/to/icon2.png" alt="Icon 2">
+                <h3>针对中文用户优化的交互界面</h3>
+                <p>界面设计更符合中文用户的使用习惯。</p>
+            </div>
+            <div class="card">
+                <img src="path/to/icon3.png" alt="Icon 3">
+                <h3>智能网络错误处理与重试机制</h3>
+                <p>确保在网络不稳定时也能顺畅使用。</p>
+            </div>
+            <div class="card">
+                <img src="path/to/icon4.png" alt="Icon 4">
+                <h3>更适合中国用户的功能定制</h3>
+                <p>提供更贴近中国用户需求的功能。</p>
+            </div>
+        </div>
+    </div>
+    <div class="developer-info" id="contact">
+        <h2>开发者介绍</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>开发者: Leon Algo</h3>
+                <p>提示词社区链接: <a href="https://example.com" target="_blank">加入我们的提示词社区</a></p>
+                <p>联系方式:</p>
+                <ul>
+                    <li>微信: leon_algo</li>
+                    <li>GitHub: <a href="https://github.com/leonalgo" target="_blank">leonalgo</a></li>
+                    <li>邮箱: leon.algo@example.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="version-info">
+        <p>版本: 1.0.0</p>
+    </div>
+    <div class="cta-download">
+        <p>立即下载我们的应用，体验更多功能！</p>
+        <a href="https://example.com/download" class="download-button">下载应用</a>
+    </div>
+    <footer>
+        <p>&copy; 2023 Leon的AI收藏夹. 保留所有权利.</p>
+    </footer>
+</body>
+</html>
